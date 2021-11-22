@@ -17,6 +17,7 @@ public class NumberButtonManager : MonoBehaviour
     [SerializeField] Button number7;
     [SerializeField] Button number8;
     [SerializeField] Button number9;
+ 
     [SerializeField] Button remove;
     [SerializeField] Button enter;
     [SerializeField] Text  fourDigitsText;
@@ -27,7 +28,6 @@ public class NumberButtonManager : MonoBehaviour
 
     void Start()
     {
-        number0.onClick.AddListener(n0);
         number1.onClick.AddListener(n1);
         number2.onClick.AddListener(n2);
         number3.onClick.AddListener(n3);
@@ -37,6 +37,7 @@ public class NumberButtonManager : MonoBehaviour
         number7.onClick.AddListener(n7);
         number8.onClick.AddListener(n8);
         number9.onClick.AddListener(n9);
+        number0.onClick.AddListener(n0);
         remove.onClick.AddListener(Remove);
         enter.onClick.AddListener(Enter);
         
@@ -164,7 +165,6 @@ public class NumberButtonManager : MonoBehaviour
         print(number);
         fourDigitsText.text = number;
     }
-
 
 
     void Update()
