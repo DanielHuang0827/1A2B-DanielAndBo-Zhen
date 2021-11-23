@@ -15,11 +15,11 @@ E:/github/1A2B-DanielAndBo-Zhen
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54999
+52255
 Successfully changed project path to: E:/github/1A2B-DanielAndBo-Zhen
 E:/github/1A2B-DanielAndBo-Zhen
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 29.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 31.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
 [Subsystems] Discovering subsystems at path E:/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -35,75 +35,75 @@ Initialize mono
 Mono path[0] = 'E:/2020.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'E:/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/2020.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: E:/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000766 seconds.
+Registered in 0.000813 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 29.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.51 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.122 seconds
+- Completed reload, in  1.156 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1122ms)
-		BeginReloadAssembly (34ms)
+	ReloadAssembly (1156ms)
+		BeginReloadAssembly (36ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (283ms)
-			LoadAssemblies (33ms)
+		EndReloadAssembly (325ms)
+			LoadAssemblies (36ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (88ms)
+			SetupTypeCache (106ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (114ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (132ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (30ms)
-				BeforeProcessingInitializeOnLoad (11ms)
-				ProcessInitializeOnLoadAttributes (52ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (56ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002075 seconds.
+Registered in 0.002146 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 30.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 43.65 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.785 seconds
+- Completed reload, in  0.842 seconds
 Domain Reload Profiling:
-	ReloadAssembly (786ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (843ms)
+		BeginReloadAssembly (100ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (662ms)
-			LoadAssemblies (57ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (702ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (182ms)
+			SetupTypeCache (188ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (319ms)
+			SetupLoadedEditorAssemblies (352ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (30ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (221ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (237ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -112,15 +112,72 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2186 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 98.0 MB.
-System memory in use after: 98.0 MB.
+System memory in use after: 98.1 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2619.
-Total: 2.320800 ms (FindLiveObjects: 0.118700 ms CreateObjectMapping: 0.041300 ms MarkObjects: 2.113800 ms  DeleteObjects: 0.046400 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2620.
+Total: 2.410400 ms (FindLiveObjects: 0.142500 ms CreateObjectMapping: 0.047800 ms MarkObjects: 2.174000 ms  DeleteObjects: 0.045400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002686 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.632 seconds
+Domain Reload Profiling:
+	ReloadAssembly (633ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (511ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (176ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (192ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (127ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2175 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2622.
+Total: 2.662300 ms (FindLiveObjects: 0.145100 ms CreateObjectMapping: 0.055300 ms MarkObjects: 2.445100 ms  DeleteObjects: 0.015600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,344 +191,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/picture/1A2B尋尋秘密_按鍵-查看提示.png
-  artifactKey: Guid(64e56f6e84c8c4714bd88a2aa3e611cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_按鍵-查看提示.png using Guid(64e56f6e84c8c4714bd88a2aa3e611cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5e9847f91c203da2f8fecaabfaf4e5') in 0.093091 seconds 
-  Import took 0.095558 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/picture/1A2B尋尋秘密_恭喜過關.png
-  artifactKey: Guid(1f8c1185ba80243a1848d7e51ed76d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_恭喜過關.png using Guid(1f8c1185ba80243a1848d7e51ed76d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900384a03f43a3f43928ce6e18c169b5') in 0.024825 seconds 
-  Import took 0.027810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/picture/1A2B尋尋秘密_模式-限時.png
-  artifactKey: Guid(9446a5c8110b44a939275acac56b1662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_模式-限時.png using Guid(9446a5c8110b44a939275acac56b1662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfcc479d53a843c64b5ee210d6fd60b4') in 0.017788 seconds 
-  Import took 0.020104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/picture/1A2B尋尋秘密_7.png
-  artifactKey: Guid(5ae4b5dc2e05f47f6aaa661cb56b49f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_7.png using Guid(5ae4b5dc2e05f47f6aaa661cb56b49f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c950f11139daf6e3576e617dbe634cc') in 0.015604 seconds 
-  Import took 0.017736 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/picture/1A2B尋尋秘密_1.png
-  artifactKey: Guid(0bc88230d82854d6e9c847c23c7a646c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_1.png using Guid(0bc88230d82854d6e9c847c23c7a646c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e6507fe8e50e44784e563a1e1b6ef5') in 0.012972 seconds 
-  Import took 0.015424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/picture/1A2B尋尋秘密_4.png
-  artifactKey: Guid(343143ba20fbb4ebab4c0043d437e1af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_4.png using Guid(343143ba20fbb4ebab4c0043d437e1af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22dfb1e8268df58af267f845d3fa8fce') in 0.011249 seconds 
-  Import took 0.013473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/picture/1A2B尋尋秘密_否.png
-  artifactKey: Guid(e648827b8c84240cb87f8d812ad5ad07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_否.png using Guid(e648827b8c84240cb87f8d812ad5ad07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d3da9b747a9a520cb114e536564d69') in 0.012235 seconds 
-  Import took 0.014635 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000105 seconds.
-  path: Assets/picture/1A2B尋尋秘密_按鍵-回主畫面.png
-  artifactKey: Guid(f23d5add91b294901bab70c95d31a240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_按鍵-回主畫面.png using Guid(f23d5add91b294901bab70c95d31a240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967f0d633df36cfe0e5387c1cdc13aa5') in 0.011869 seconds 
-  Import took 0.013939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/picture/1A2B尋尋秘密_模式-安全.png
-  artifactKey: Guid(4440bccca368b440b97de95c462013d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_模式-安全.png using Guid(4440bccca368b440b97de95c462013d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df0735ae3650b8fcac639296ccf07a8a') in 0.010838 seconds 
-  Import took 0.012989 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/picture/1A2B尋尋秘密_按鍵-精準.png
-  artifactKey: Guid(e38cb299f287740309c3c58a959d6af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_按鍵-精準.png using Guid(e38cb299f287740309c3c58a959d6af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43d72a4c0a6dfa347f491f707cd4250') in 0.014250 seconds 
-  Import took 0.016574 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000113 seconds.
-  path: Assets/picture/1A2B尋尋秘密 大神背景_遊戲頁面.png
-  artifactKey: Guid(f817f4946d50c40a29adda62878ccb7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密 大神背景_遊戲頁面.png using Guid(f817f4946d50c40a29adda62878ccb7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944626be17ed8d647dc6c44f2e3dc7f3') in 0.012883 seconds 
-  Import took 0.015098 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/picture/1A2B尋尋秘密_9.png
-  artifactKey: Guid(079db2d23523f46a0aa3e7cd0d182603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_9.png using Guid(079db2d23523f46a0aa3e7cd0d182603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db39aa4a115677abd31b211e31d7d6b2') in 0.015076 seconds 
-  Import took 0.017367 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000105 seconds.
-  path: Assets/picture/1A2B尋尋秘密_模式-精準.png
-  artifactKey: Guid(8c89894fead394655a340384cf2db239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_模式-精準.png using Guid(8c89894fead394655a340384cf2db239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0dfa70b3ea65f68c0f02476a595961d') in 0.013300 seconds 
-  Import took 0.015690 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/picture/1A2B尋尋秘密_打勾.png
-  artifactKey: Guid(38a16ba7f919c435dbbf266abc090aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_打勾.png using Guid(38a16ba7f919c435dbbf266abc090aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1c3c6433dad282249aaf632030b267') in 0.014595 seconds 
-  Import took 0.016772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/picture/1A2B尋尋秘密 純封面.png
-  artifactKey: Guid(13ca5cdfc3d0a4f9d90934585f8402dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密 純封面.png using Guid(13ca5cdfc3d0a4f9d90934585f8402dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce17ecaf009f2869da27986079c0ded2') in 0.018958 seconds 
-  Import took 0.021411 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/picture/1A2B尋尋秘密_按鍵-回合數.png
-  artifactKey: Guid(4d683b8cfe7ac4eafbb12755abd48ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_按鍵-回合數.png using Guid(4d683b8cfe7ac4eafbb12755abd48ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c815c0fc85f500590a452a24ccf4c7') in 0.012217 seconds 
-  Import took 0.014874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/picture/1A2B尋尋秘密_放棄遊戲說明.png
-  artifactKey: Guid(4b96265032e414d6ea6da853c6d676f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_放棄遊戲說明.png using Guid(4b96265032e414d6ea6da853c6d676f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd85fd35960bf0af94d0bb97383d5286') in 0.022054 seconds 
-  Import took 0.025537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000114 seconds.
-  path: Assets/picture/1A2B尋尋秘密_箭頭.png
-  artifactKey: Guid(9bc4797a3da074ff990b217b3b97032f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_箭頭.png using Guid(9bc4797a3da074ff990b217b3b97032f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904c74731869205501d45507ec15c3f0') in 0.012628 seconds 
-  Import took 0.014829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/picture/1A2B尋尋秘密 精準bg_遊戲頁面.png
-  artifactKey: Guid(7fe9d0bf422e642feb1a526a972285ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密 精準bg_遊戲頁面.png using Guid(7fe9d0bf422e642feb1a526a972285ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5e42cfe6b8a94443aaebcbac81ec5d') in 0.016789 seconds 
-  Import took 0.018921 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/picture/1636632138_587722.png
-  artifactKey: Guid(203b1f1c754c947c9b2ed00359a60c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1636632138_587722.png using Guid(203b1f1c754c947c9b2ed00359a60c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9b54c3025df2e3a5b85aef028bc77a') in 0.012040 seconds 
-  Import took 0.014362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/picture/1A2B尋尋秘密_模式小按鍵.psd
-  artifactKey: Guid(ae1078955ec6942d0971f0c9ed7eb2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_模式小按鍵.psd using Guid(ae1078955ec6942d0971f0c9ed7eb2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad5135767fe6c6f5b3c96a67664524a') in 0.013541 seconds 
-  Import took 0.015958 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/picture/1A2B尋尋秘密_8.png
-  artifactKey: Guid(2fd160f448920449189403c6c572556c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_8.png using Guid(2fd160f448920449189403c6c572556c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef79e8641b0998f91f4474bfc7b5cb57') in 0.016536 seconds 
-  Import took 0.018734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/picture/1A2B尋尋秘密_暗背景樹.png
-  artifactKey: Guid(f2487a3a6f679485288d52a11bcc0a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_暗背景樹.png using Guid(f2487a3a6f679485288d52a11bcc0a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc38716905d8be334681017b5c1943c') in 0.017570 seconds 
-  Import took 0.020013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/picture/1636632106_186863.png
-  artifactKey: Guid(738a4ef2e1595424f8a59406b4e811e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1636632106_186863.png using Guid(738a4ef2e1595424f8a59406b4e811e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb6c3810ca8d169b3eecbf231e67107') in 0.012198 seconds 
-  Import took 0.014517 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/picture/1A2B尋尋秘密_按鍵-大神.png
-  artifactKey: Guid(d5cb4f360d4ad45d7885d55ce6c012e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_按鍵-大神.png using Guid(d5cb4f360d4ad45d7885d55ce6c012e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13efd9798da83eeb7edc568580ede2e') in 0.014744 seconds 
-  Import took 0.017142 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/picture/1A2B尋尋秘密_按鍵-限時.png
-  artifactKey: Guid(65720400838b04365808de3e60faa7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_按鍵-限時.png using Guid(65720400838b04365808de3e60faa7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd376ef84f4d8ae5142eb5b20d9713f') in 0.013111 seconds 
-  Import took 0.015520 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/picture/1A2B尋尋秘密_2.png
-  artifactKey: Guid(41ed05c6087f348d3861b4f66219d0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_2.png using Guid(41ed05c6087f348d3861b4f66219d0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710c2feef169eb1980e16ebb67fa5b4f') in 0.013678 seconds 
-  Import took 0.015921 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/picture/1A2B尋尋秘密_0.png
-  artifactKey: Guid(ece6e033f426c49aab27cb5008e61cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_0.png using Guid(ece6e033f426c49aab27cb5008e61cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933fc23e99198a97fd4c4d0dbe57abc8') in 0.017129 seconds 
-  Import took 0.019238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000109 seconds.
-  path: Assets/picture/1A2B尋尋秘密_按鍵-重新開始.png
-  artifactKey: Guid(2d9be5414cefa49e1849bc4eab7a60c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_按鍵-重新開始.png using Guid(2d9be5414cefa49e1849bc4eab7a60c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7404ce45d35a4107fb7429c397af068c') in 0.014403 seconds 
-  Import took 0.016673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/picture/1A2B尋尋秘密 安全bg_遊戲頁面.png
-  artifactKey: Guid(d73925a64c94741ce928bd39fad8682c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密 安全bg_遊戲頁面.png using Guid(d73925a64c94741ce928bd39fad8682c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d18e9c449366c96509c42b475d0bbe8') in 0.014102 seconds 
-  Import took 0.016426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000113 seconds.
-  path: Assets/picture/1A2B尋尋秘密_6.png
-  artifactKey: Guid(014bb9fbac9f94cfaba32aae2e11fef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_6.png using Guid(014bb9fbac9f94cfaba32aae2e11fef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32234e62adb340e55fa1bc1091aacf7f') in 0.012938 seconds 
-  Import took 0.015236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/picture/1A2B尋尋秘密_是.png
-  artifactKey: Guid(6d5032c8cf4904dbb8122bce8b18bf9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_是.png using Guid(6d5032c8cf4904dbb8122bce8b18bf9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c1ee4c31c2605d4a415d372724f2cd') in 0.018532 seconds 
-  Import took 0.020729 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/picture/1A2B尋尋秘密_模式-大神.png
-  artifactKey: Guid(6480e9956897645908810983aae87561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_模式-大神.png using Guid(6480e9956897645908810983aae87561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f7e20706306334dc9a4557231dd3cf') in 0.011914 seconds 
-  Import took 0.014086 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/picture/1A2B尋尋秘密_模式-遊戲說明.png
-  artifactKey: Guid(191053ec0308441019e8e6bb84166aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_模式-遊戲說明.png using Guid(191053ec0308441019e8e6bb84166aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed26285dfc0193ffe35c6ff297f6a823') in 0.013340 seconds 
-  Import took 0.015459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/picture/1A2B尋尋秘密 限時bg_遊戲頁面.png
-  artifactKey: Guid(40785559893ee4da38cc01f4df896898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密 限時bg_遊戲頁面.png using Guid(40785559893ee4da38cc01f4df896898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92f3aceeee30ffbf0e08ec7aa046112') in 0.014838 seconds 
-  Import took 0.016986 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/picture/1636632133_481146.png
-  artifactKey: Guid(e562fbec924e54cb9b1f6964c2867ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1636632133_481146.png using Guid(e562fbec924e54cb9b1f6964c2867ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb468ec306347e7d066542777269c906') in 0.012936 seconds 
-  Import took 0.015060 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/picture/1A2B尋尋秘密 放棄遊戲bg_放棄遊戲.png
-  artifactKey: Guid(caf1e8859f5ed4b829cef61e9d6452c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密 放棄遊戲bg_放棄遊戲.png using Guid(caf1e8859f5ed4b829cef61e9d6452c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd6b74c077d21c1389c4dcb5ef083e3') in 0.016044 seconds 
-  Import took 0.018395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/picture/1A2B尋尋秘密_5.png
-  artifactKey: Guid(bdc4b2e29bcfd433787ff5f00353d457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_5.png using Guid(bdc4b2e29bcfd433787ff5f00353d457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d8850c4fdd3f4ebc3af2945368af6f') in 0.014945 seconds 
-  Import took 0.017090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/picture/1A2B尋尋秘密_遊戲說明圖.png
-  artifactKey: Guid(f2b32cc462772408dabc44dc079402db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_遊戲說明圖.png using Guid(f2b32cc462772408dabc44dc079402db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a2074ff1b09d7381a399574086adcd') in 0.012982 seconds 
-  Import took 0.015172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000105 seconds.
-  path: Assets/picture/1A2B尋尋秘密 恭喜過關bg_恭喜過關.png
-  artifactKey: Guid(4afe1fd508b29419dbaa54b6a281ebfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密 恭喜過關bg_恭喜過關.png using Guid(4afe1fd508b29419dbaa54b6a281ebfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cab173c148d04c874f3bb2dd4342b9b') in 0.014202 seconds 
-  Import took 0.016461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/picture/1A2B尋尋秘密_按鍵-安全.png
-  artifactKey: Guid(6a550a9e1d661485ea443cfbaeda1eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_按鍵-安全.png using Guid(6a550a9e1d661485ea443cfbaeda1eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3888c9440fd74efd1bb7d9b0663d6eac') in 0.013329 seconds 
-  Import took 0.015484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/picture/1A2B尋尋秘密_3.png
-  artifactKey: Guid(bf1c67f50c6704c6d9eab49c9a424afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/1A2B尋尋秘密_3.png using Guid(bf1c67f50c6704c6d9eab49c9a424afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '518782ec317f7f58e37beef8573a0add') in 0.014614 seconds 
-  Import took 0.016850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.358169 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f6aecae1dd29045de0cd1b70f73170') in 0.004594 seconds 
-  Import took 0.007153 seconds .
+  path: Assets/NumberButtonManager.cs
+  artifactKey: Guid(de88261a179561c48b3b9654f279dfb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NumberButtonManager.cs using Guid(de88261a179561c48b3b9654f279dfb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba1cf40e6cf1346f5caff45e54745d9') in 0.026690 seconds 
+  Import took 0.029285 seconds .
 
