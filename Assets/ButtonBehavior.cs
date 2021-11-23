@@ -24,6 +24,8 @@ public class ButtonBehavior : MonoBehaviour
 
     void Start()
     {
+
+
         BackToMenu.onClick.AddListener(SwitchMenu);
         SafeMode.onClick.AddListener(SwitchMenu);
         TimeLimitMode.onClick.AddListener(SwitchMenu);
@@ -55,8 +57,10 @@ public class ButtonBehavior : MonoBehaviour
 
     private void GoToHelpPanel()
     {
+
         MainMenu.active = false;
         HelpPanel.active = true;
+
     }
 
 
