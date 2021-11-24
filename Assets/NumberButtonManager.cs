@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
@@ -21,8 +22,19 @@ public class NumberButtonManager : MonoBehaviour
     [SerializeField] Button enter;
     [SerializeField] Text  fourDigitsText;
     [SerializeField] Text playerAnswer;
-    string number;
+   
     
+    string number;
+    private string answer;
+    private int a;
+    private int b;
+    private int times;
+
+    public string Answer { get => answer; set => answer = value; }
+    public int A { get => a; set => a = value; }
+    public int B { get => b; set => b = value; }
+    public int Times { get => times; set => times = value; }
+
 
 
     void Start()
@@ -42,12 +54,13 @@ public class NumberButtonManager : MonoBehaviour
         remove.onClick.AddListener(Remove);
         enter.onClick.AddListener(Enter);
 
+        Text test = playerAnswer.GetComponent<Text>();
+        test.text = number;
 
-     
         ;
     }
 
-    private void Enter()
+    private void Enter()//string guess
     {
 
         Text test = playerAnswer.GetComponent<Text>();
@@ -56,7 +69,43 @@ public class NumberButtonManager : MonoBehaviour
 
 
 
+        //a = 0;
+        //b = 0;
+        //foreach (char i in guess)
+        //{
+        //    if (answer.Contains(i))
+        //    {
+        //        if (answer.IndexOf(i) == guess.IndexOf(i))
+        //        {
+        //            a += 1;
+        //        }
+        //        else
+        //        {
+        //            b += 1;
+        //        }
+        //    }
+        //}
 
+        //             bool FindNumber(string nimber)
+        //            {
+        //                int count = 0;
+        //                foreach (char i in number)
+        //                {
+        //                    foreach (char j in number)
+        //                    {
+        //                        if (i == j)
+        //                        {
+        //                            count += 1;
+        //                        }
+        //                    }
+        //                    if (count > 1)
+        //                    {
+        //                        return true;
+        //                    }
+        //                    count = 0;
+        //                }
+        //                return false;
+        //            }
 
 
 
@@ -66,7 +115,7 @@ public class NumberButtonManager : MonoBehaviour
     }
 
 
-        //-----------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------
     private void Remove()
     {
 
