@@ -188,7 +188,40 @@ public class NumberButtonManager : MonoBehaviour
 
     void Update()
     {
-        
+        //public Guess(int digit = 4)
+        //        {
+        //            string number = "1234567890";
+
+        //            while (true)
+        //            {
+        //                answer = Shuffle(number).Substring(0, digit);
+        //                if (answer[0] != '0')
+        //                {
+        //                    break;
+        //                }
+        //                a = 0;
+        //                b = 0;
+        //                times = 0;
+
+        //            }
+
+
+
+        //            string Shuffle(string s)
+        //            {
+        //                char[] s_array = s.ToCharArray();
+        //                Random r = new Random();
+        //                int n = s.Length;
+        //                while (n > 1)
+        //                {
+        //                    n--;
+        //                    int k = r.Next(n + 1);
+        //                    var v = s_array[k];
+        //                    s_array[k] = s_array[n];
+        //                    s_array[n] = v;
+        //                }
+        //                return new string(s_array);
+        //            }
 
     }
 }
