@@ -20,9 +20,9 @@ public class NumberButtonManager : MonoBehaviour
     [SerializeField] Button remove;
     [SerializeField] Button enter;
     [SerializeField] Text  fourDigitsText;
-
+    [SerializeField] Text playerAnswer;
     string number;
-
+    
 
 
     void Start()
@@ -41,13 +41,17 @@ public class NumberButtonManager : MonoBehaviour
         number0.onClick.AddListener(n0);
         remove.onClick.AddListener(Remove);
         enter.onClick.AddListener(Enter);
-        
-}
+
+
+     
+        ;
+    }
 
     private void Enter()
     {
-       
-   
+
+        Text test = playerAnswer.GetComponent<Text>();
+        test.text = number;
 
 
 
@@ -59,11 +63,11 @@ public class NumberButtonManager : MonoBehaviour
 
 
 
-     }
-   
+    }
+
 
         //-----------------------------------------------------------------------------------------------
-        private void Remove()
+    private void Remove()
     {
 
         number = number.Remove(number.Length -1 , 1);
