@@ -58,7 +58,7 @@ public class NumberButtonManager : MonoBehaviour
         test.text = number;
         Random crandom = new Random();
         fourDigitRandom = "";
-        string[] array1 = new string[4];
+        string[] array1 = new string[6];
 
         for(int i = 3; i != 6; i++)
         {
