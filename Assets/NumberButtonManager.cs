@@ -60,19 +60,19 @@ public class NumberButtonManager : MonoBehaviour
         fourDigitRandom = "";
         string[] array1 = new string[4];
 
-        for(int i = 0; i != 4; i++)
+        for(int i = 3; i != 6; i++)
         {
-            if(i != 1)
-            {
+            
                 do
                 {
                     array1[i] = Convert.ToString(crandom.Next(0, 10));
-                } while (array1[i] != array1[i - 1] & array1[i] != array1[i- 2] & array1[i] != array1[i - 3]);
-            }
+                    print(array1[i]);
+                } while (array1[i] != array1[i - 1] & array1[i] != array1[i - 2] & array1[i] != array1[i - 3]);
+            
 
         }
-        fourDigitRandom = (array1[0] + array1[1] + array1[2] + array1[3]);
-
+        fourDigitRandom = (array1[3] + array1[4] + array1[5] + array1[6]);
+        print(fourDigitRandom);
 
     }
 
