@@ -7,10 +7,8 @@ using UnityEngine.UI;
 
 public class ButtonBehavior : MonoBehaviour
 {
-    [SerializeField] Button BackToMenu;
+
     [SerializeField] Button BackToMenu2;
-    [SerializeField] Button Restart;
-    [SerializeField] Button Hints;
     [SerializeField] Button SafeMode;
     [SerializeField] Button TimeLimitMode;
     [SerializeField] Button AllLimitMode;
@@ -25,15 +23,11 @@ public class ButtonBehavior : MonoBehaviour
 
     void Start()
     {
-
-
-        BackToMenu.onClick.AddListener(SwitchMenu);
         SafeMode.onClick.AddListener(SwitchMenu);
         TimeLimitMode.onClick.AddListener(SwitchMenu);
         AllLimitMode.onClick.AddListener(SwitchMenu);
         HardMode.onClick.AddListener(SwitchMenu);
         Help.onClick.AddListener(GoToHelpPanel);
-        Restart.onClick.AddListener(RestartTheGame);
         BackToMenu2.onClick.AddListener(SwitchToMenu);
         //MainMenu.active = true;
         //Gaming.active = false;
