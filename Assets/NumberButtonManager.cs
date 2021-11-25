@@ -35,7 +35,7 @@ public class NumberButtonManager : MonoBehaviour
     public int B { get => b; set => b = value; }
     public int Times { get => times; set => times = value; }
 
-    int fourDigitRandom;
+    string fourDigitRandom;
 
     void Start()
     {
@@ -57,11 +57,11 @@ public class NumberButtonManager : MonoBehaviour
         Text test = playerAnswer.GetComponent<Text>();
         test.text = number;
         Random crandom = new Random();
-        
-        for (int i = 0; i < 100; i++)
+        fourDigitRandom = "";
+        while (fourDigitRandom.Length == 4)
         {
-            i = crandom.Next(0, 10);
-            print(i);
+            fourDigitRandom = fourDigitRandom + crandom.Next(0, 10);
+            print(fourDigitRandom);
         }
 
     }
