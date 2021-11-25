@@ -1612,13 +1612,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f264d517b1e8849d9ae1cb6d0b5525d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backToMenu: {fileID: 1268605927}
   restart: {fileID: 1144057085}
   hints: {fileID: 5530062}
+  backToMenu: {fileID: 1268605927}
   askForSure: {fileID: 238355871}
   yes: {fileID: 509674728}
   no: {fileID: 193381662}
   panelMenu: {fileID: 1615315822}
+  number0: {fileID: 1223335433}
+  number1: {fileID: 765499989}
+  number2: {fileID: 1731169007}
+  number3: {fileID: 1640034951}
+  number4: {fileID: 1669277883}
+  number5: {fileID: 463566328}
+  number6: {fileID: 1102229724}
+  number7: {fileID: 1772385582}
+  number8: {fileID: 1818170742}
+  number9: {fileID: 1698665143}
+  remove: {fileID: 2052067333}
+  enter: {fileID: 1513452036}
+  fourDigitsText: {fileID: 621377784}
+  playerAnswer: {fileID: 72279982}
 --- !u!1 &765499987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,20 +1813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de88261a179561c48b3b9654f279dfb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  number0: {fileID: 1223335433}
-  number1: {fileID: 765499989}
-  number2: {fileID: 1731169007}
-  number3: {fileID: 1640034951}
-  number4: {fileID: 1669277883}
-  number5: {fileID: 463566328}
-  number6: {fileID: 1102229724}
-  number7: {fileID: 1772385582}
-  number8: {fileID: 1818170742}
-  number9: {fileID: 1698665143}
-  remove: {fileID: 2052067333}
-  enter: {fileID: 1513452036}
-  fourDigitsText: {fileID: 621377784}
-  playerAnswer: {fileID: 72279982}
 --- !u!1 &1011466136
 GameObject:
   m_ObjectHideFlags: 0
