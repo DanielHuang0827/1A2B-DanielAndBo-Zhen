@@ -58,11 +58,21 @@ public class NumberButtonManager : MonoBehaviour
         test.text = number;
         Random crandom = new Random();
         fourDigitRandom = "";
-        while (fourDigitRandom.Length == 4)
+        string[] array1 = new string[4];
+
+        for(int i = 0; i != 4; i++)
         {
-            fourDigitRandom = fourDigitRandom + crandom.Next(0, 10);
-            print(fourDigitRandom);
+            if(i != 1)
+            {
+                do
+                {
+                    array1[i] = Convert.ToString(crandom.Next(0, 10));
+                } while (array1[i] != array1[i - 1] & array1[i] != array1[i- 2] & array1[i] != array1[i - 3]);
+            }
+
         }
+        fourDigitRandom = (array1[0] + array1[1] + array1[2] + array1[3]);
+
 
     }
 
