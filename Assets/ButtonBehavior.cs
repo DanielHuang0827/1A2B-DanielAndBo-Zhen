@@ -20,6 +20,7 @@ public class ButtonBehavior : MonoBehaviour
     [SerializeField] GameObject Gaming;
     [SerializeField] GameObject HelpPanel;
     [SerializeField] Text FourDigits;
+    [SerializeField] GameObject ModelButtons;
     
 
     void Start()
