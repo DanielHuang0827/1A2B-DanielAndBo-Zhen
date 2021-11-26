@@ -29,9 +29,9 @@ public class ButtonBehavior : MonoBehaviour
         HardMode.onClick.AddListener(SwitchMenu);
         Help.onClick.AddListener(GoToHelpPanel);
         BackToMenu2.onClick.AddListener(SwitchToMenu);
-        //MainMenu.active = true;
-        //Gaming.active = false;
-        //HelpPanel.active = false;
+        MainMenu.active = true;
+        Gaming.active = false;
+        HelpPanel.active = false;
 
 
     }
@@ -41,21 +41,10 @@ public class ButtonBehavior : MonoBehaviour
         MainMenu.active = true;
         HelpPanel.active = false;
     }
-
-    public void RestartTheGame()
-    {
-        FourDigits.text = "";
-        
-
-
-    }
-
     private void GoToHelpPanel()
     {
-
         MainMenu.active = false;
         HelpPanel.active = true;
-
     }
 
 
@@ -64,21 +53,13 @@ public class ButtonBehavior : MonoBehaviour
 
         if (MainMenu.active == false)
         {
-            print(MainMenu.active);
-            Debug.Log("A open Menu");
             MainMenu.active = true;
             Gaming.active = false;
-            Debug.Log("open Menu");
-            
         }
         else if (MainMenu.active == true)
         {
-            print(MainMenu.active);
-            Debug.Log("A Start Game");
             MainMenu.active = false;
             Gaming.active = true;
-            Debug.Log("Start Game");
-            
         }
         
     }

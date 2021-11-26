@@ -14,9 +14,12 @@ public class GamingPanelBehavior : MonoBehaviour
     [SerializeField] GameObject askForSure;
     [SerializeField] Button yes;
     [SerializeField] Button no;
+
+    [SerializeField] Button congratulationBackToMenu;
     #endregion
     
     [SerializeField] GameObject panelMenu;
+    [SerializeField] GameObject Congratulation;
 
     #region [SF]Number And Enter Button
     [SerializeField] Button number0;
@@ -35,16 +38,28 @@ public class GamingPanelBehavior : MonoBehaviour
 
     [SerializeField] Text fourDigitsText;
     [SerializeField] Text playerAnswer;
+    [SerializeField] Text counter;
+    [SerializeField] Text congratulationInfomation;
+    [SerializeField] Text timerText;
+
 
     #region 變數預設
     string number;
-    private string answer;
+    string answer;
+    string printAnswer;
     bool BackOrNot;
+    bool timerTurnOn;
     int count;
     private int[] ans = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };//正確答案
     private String[] gnum = new string[10];//猜的答案數字
     private int tmp, r;
     private Random ran = new Random();
+    DateTime startTime;
+    float timer_f = 0f;
+    int timer_i = 0;
+    int minute = 0;
+    int second = 0;
+
     #endregion
 
     void Start()
@@ -66,14 +81,19 @@ public class GamingPanelBehavior : MonoBehaviour
         hints.onClick.AddListener(Hints);
         yes.onClick.AddListener(Yes);
         no.onClick.AddListener(No);
-        askForSure.active = false;
-        BackOrNot = false;
+        congratulationBackToMenu.onClick.AddListener(Yes);
 
-        count = 0;
-        Text test = playerAnswer.GetComponent<Text>();
-        test.text = number;
+        ResetMethod();
+        
 
 
+
+        
+
+    }
+
+    public void ResetMethod()
+    {
         for (int i = 0; i < 10; i++)
         {
             ans[i] = i;
@@ -90,77 +110,99 @@ public class GamingPanelBehavior : MonoBehaviour
             print("ans[9-i]" + ans[9 - i]);
             print("------------------------------------");
         }
-
-
+        printAnswer = "";
+        count = 0;
+        counter.text = count.ToString();
+        playerAnswer.text = "";
+        askForSure.active = false;
+        Congratulation.active = false;
+        BackOrNot = false;
+        timerTurnOn = false;
+        timer_f = 0f;
+        timer_i = 0;
+        number = "";
+        fourDigitsText.text = number;
 
     }
 
-
-    #region Number And Enter
+    #region Number
     private void n0()
     {
+        timerTurnOn = true; 
         number = number + "0";
         print(number);
         fourDigitsText.text = number;
     }
     private void n1()
     {
+        timerTurnOn = true; 
         number = number + "1";
         print(number);
         fourDigitsText.text = number;
     }
     private void n2()
     {
+        timerTurnOn = true; 
         number = number + "2";
         print(number);
         fourDigitsText.text = number;
     }
     private void n3()
     {
+        timerTurnOn = true; 
         number = number + "3";
         print(number);
         fourDigitsText.text = number;
     }
     private void n4()
     {
+        timerTurnOn = true; 
         number = number + "4";
         print(number);
         fourDigitsText.text = number;
     }
     private void n5()
     {
+        timerTurnOn = true; 
         number = number + "5";
         print(number);
         fourDigitsText.text = number;
     }
     private void n6()
     {
+        timerTurnOn = true; 
         number = number + "6";
         print(number);
         fourDigitsText.text = number;
     }
     private void n7()
     {
+        timerTurnOn = true; 
         number = number + "7";
         print(number);
         fourDigitsText.text = number;
     }
     private void n8()
     {
+        timerTurnOn = true;
         number = number + "8";
         print(number);
         fourDigitsText.text = number;
     }
     private void n9()
     {
+        timerTurnOn = true; 
         number = number + "9";
         print(number);
         fourDigitsText.text = number;
     }
+
+
+    #endregion
+
+    #region Main action
     private void Enter()
     {
-        Text test = playerAnswer.GetComponent<Text>();
-        test.text = number;
         number = fourDigitsText.text;
         string num = "";
         int a = 0, b = 0;
@@ -201,12 +243,24 @@ public class GamingPanelBehavior : MonoBehaviour
                         }
                     }
                 }
-                print(num + "-----" + a.ToString() + "A" + b.ToString() + "B" + "\r\n");
+                answer = (num + "-----" + a.ToString() + "A" + b.ToString() + "B" + "\r\n");
+
+                playerAnswer.text = printAnswer + answer;
+
+                printAnswer = printAnswer + answer;
+
+                counter.text = count.ToString();
                 print(count);
 
             }
             if (a == 4 && b == 0)
             {
+                Congratulation.active = true;
+                string label2 = "";
+                for (int i = 1; i <= 4; i++) label2 += ans[i];
+                
+                congratulationInfomation.text = ("答案就是" + label2 + "\r\n" + "一共經過" + count +"回合"+ "\r\n" + "總共花費：" + minute + "分" + second + "秒" + "\r\n" + "您贏過很多位玩家呢");
+                BackOrNot = true;
                 print("恭喜你猜對了");
                 //退出遊戲
             }
@@ -232,7 +286,6 @@ public class GamingPanelBehavior : MonoBehaviour
         fourDigitsText.text = number;
         print(number);
     }
-
     #endregion
 
     #region SeeAnswer
@@ -271,13 +324,11 @@ public class GamingPanelBehavior : MonoBehaviour
         BackOrNot = true;
         askForSure.active = true;
     }
-
     private void Restart()
     {
         BackOrNot = false;
         askForSure.active = true;
     }
-
     private void Hints()
     {
         //這邊要做提示鈕，告訴玩家其中一個字
@@ -288,55 +339,68 @@ public class GamingPanelBehavior : MonoBehaviour
         }
         print(label2);
     }
-
     private void Yes()
     {
+        
         if (BackOrNot == true)//判斷他是不是點選回主畫面按鈕，若是，則跳回主畫面，若否，則重新出題
         {
-            for (int i = 0; i < 10; i++)
-            {
-                r = ran.Next(0, 10 - i);
-                tmp = ans[r];
-                ans[r] = ans[9 - i];
-                ans[9 - i] = tmp;
-            }
-            for (int j = 1; j <= 4; j++)
-            {
-                gnum[j] = "";
-            }
-            askForSure.active = false;
+            
             panelMenu.active = true;
             //還缺一個告訴玩家的告示牌圖檔
         }
-        else
-        {
-            askForSure.active = false;
-            for (int i = 0; i < 10; i++)
-            {
-                r = ran.Next(0, 10 - i);
-                tmp = ans[r];
-                ans[r] = ans[9 - i];
-                ans[9 - i] = tmp;
-            }
-            for (int j = 1; j <= 4; j++)
-            {
-                gnum[j] = "";
-            }
-            count = 0;
-            fourDigitsText.text = number;
+        ResetMethod();
 
-            //還缺一個告訴玩家的告示牌圖檔
-            //這邊要打重新開始的程式
-        }
+
 
     }
-
     private void No()
     {
         askForSure.active = false;
     }
     #endregion
 
+    void FixedUpdate()
+    {
+        
+
+        if (timerTurnOn == true)
+        {
+            timer_f += Time.deltaTime;
+            timer_i = (int)timer_f;
+        }
+
+        
+        turn_time();
+        //印出時間動作
+        if (minute < 10)
+        {
+
+            if (second < 10)
+            {
+                timerText.text = "0" + minute + ":0" + second;
+            }
+            else
+            {
+                timerText.text = "0" + minute + ":" + second;
+            }
+        }
+        else
+        {
+            if (second < 10)
+            {
+                timerText.text = minute + ":0" + second;
+            }
+            else
+            {
+                timerText.text = minute + ":" + second;
+            }
+        }
+    }
+    void turn_time()
+    {
+        minute = timer_i / 60;
+        second = timer_i % 60;
+    }
 
 
 }
