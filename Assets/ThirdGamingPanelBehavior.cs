@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
@@ -259,15 +261,16 @@ public class ThirdGamingPanelBehavior : MonoBehaviour
                 string label2 = "";
                 for (int i = 1; i <= 4; i++) label2 += ans[i];
 
-                congratulationInfomation.text = ("答案就是" + label2 + "\r\n" + "一共經過" + count + "回合" + "\r\n" + "總共花費：" + minute + "分" + second + "秒" + "\r\n" + "您贏過很多位玩家呢");
+                congratulationInfomation.text = ("答案就是" + label2 + "\r\n" + "10回合剩下" + count + "回合" + "\r\n" + "總共花費：" + minute + "分" + second + "秒" + "\r\n" + "您贏過很多位玩家呢");
                 BackOrNot = true;
                 print("恭喜你猜對了");
                 //退出遊戲
             }
-            else if (count == 11)
+            else if (count >= 11)
             {
                 print("你要再加油了");
                 //退出遊戲
+                
             }
             number = "";
             fourDigitsText.text = number;

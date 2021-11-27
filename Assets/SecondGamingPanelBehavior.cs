@@ -56,7 +56,7 @@ public class SecondGamingPanelBehavior : MonoBehaviour
     private Random ran = new Random();
     DateTime startTime;
     float timer_f = 0f;
-    int timer_i = 0;
+    int timer_i =0 ;
     int minute = 0;
     int second = 0;
 
@@ -264,7 +264,7 @@ public class SecondGamingPanelBehavior : MonoBehaviour
                 print("恭喜你猜對了");
                 //退出遊戲
             }
-            else if (count == 11)
+            else if (count >= 11)
             {
                 print("你要再加油了");
                 //退出遊戲
@@ -377,11 +377,11 @@ public class SecondGamingPanelBehavior : MonoBehaviour
 
             if (second < 10)
             {
-                timerText.text = "0" + minute + ":0" + second;
+                timerText.text = "" + minute + ":0" + second;
             }
             else
             {
-                timerText.text = "0" + minute + ":" + second;
+                timerText.text = "" + minute + ":" + second;
             }
         }
         else
