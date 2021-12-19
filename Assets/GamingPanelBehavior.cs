@@ -264,7 +264,7 @@ public class GamingPanelBehavior : MonoBehaviour
                 print("恭喜你猜對了");
                 //退出遊戲
             }
-            else if (count == 11)
+            else if (count == 20)
             {
                 print("你要再加油了");
                 //退出遊戲
